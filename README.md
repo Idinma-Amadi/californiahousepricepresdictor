@@ -1,6 +1,6 @@
-# californiahousepricepresdictor
-This project focuses on building and deploying a machine learning–powered web application capable of predicting housing prices in California based on key property and demographic features. The system uses the California Housing dataset, a widely recognized benchmark for predictive modeling. After preprocessing the data and scaling numerical attributes, a Ridge Regression model was trained due to its stability and ability to handle multicollinearity in housing features. The trained model and scaler were saved using Joblib and integrated into a user-friendly Streamlit interface.
+For the cleaning process. I removed:
+- missing values (using .dropna)
+- categorical values (using .drop)
 
-The web application allows users to enter variables such as longitude, latitude, median income, population, household count, total rooms, and housing median age. Once the inputs are provided, the model processes the values through the scaler and predicts an estimated house price. The interface is enhanced with professional styling, including a clean layout, modern typography, responsive input fields, and styled buttons, resulting in an accessible and visually appealing tool.
-
-Deployment is achieved through Streamlit Cloud, enabling easy web hosting and public accessibility. Overall, this project demonstrates practical skills in machine learning, data preprocessing, UI design, and cloud deployment, offering a real-world example of how predictive models can be packaged into functional, interactive applications.
+why?
+- We are goin to use Linear regression model and Linear regression model doesn't work with missing values or categorical  values (non numeric values - strings)
